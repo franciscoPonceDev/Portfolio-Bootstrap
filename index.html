@@ -198,20 +198,24 @@
             </ul>
         </div>
     </section>
-    <section id="Contacts">
-        <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
-        <form action="#">
-            <div class="input-group">
-                <input type="text" class="form-control" placeholder="Full Name" aria-label="Username" aria-describedby="basic-addon1" required>
+    <section id="Contacts" class="container p-5 m-5">
+        <div class="row">
+            <div class="col d-flex align-items-center">
+                <h2 class="">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
             </div>
-            <div class="input-group">
-                <input type="email" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1" required>
-            </div>
-            <div class="input-group">
-                <textarea name="message" class="form-control"id="message" cols="30" rows="10" required></textarea>
-            </div>
-            <button type="submit" class="mt-3 btn btn-warning">See Project</button>
-        </form>
+            <form action="#" class="col">
+                <div class="input-group text-wrap">
+                    <input type="text" id="name" class="form-control" placeholder="Full Name" aria-label="Username" aria-describedby="name" required>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="email" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="email" required>
+                </div>
+                <div class="input-group">
+                    <textarea name="message" class="form-control" id="message" cols="30" rows="10" placeholder="Please leave your message" required></textarea>
+                </div>
+                <button type="submit" class="mt-3 btn btn-warning">Get in touch</button>
+            </form>
+        </div>
     </section>
 
 

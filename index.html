@@ -13,41 +13,41 @@
     
     <title>Document</title>
 </head>
-<body>
+<body class="position-relative" data-bs-spy="scroll" data-bs-target="#navbarSupportedContent" >
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-gradient">
-            <div class="container-fluid">
-            <a class="navbar-brand ms-5" href="#">John Doe</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#Portfolio">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#About">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#Contacts">Contacts</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#Contacts"><i class="far fa-envelope fa-lg"></i></a>
-                </li>
-                </ul>
-            </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-gradient fixed-top">
+            <div class="container-fluid d-flex">
+                <a class="navbar-brand ms-5" href="#">John Doe</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#Portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#About">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Contacts">Contacts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Contacts"><i class="far fa-envelope fa-lg"></i></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
-    <section id="Heading" class="bg-dark d-flex text-white px-5 py-5 ">
-        <div class="order-md-1">
+    <section id="Heading" class="bg-dark d-flex flex-column flex-md-row text-white px-5 py-5">
+        <div class="order-0 order-md-1 pt-5">
             <h1 class="text-warning">Hey There.<br>I’m Alex</h1>
             <h3>I'm a Software Developer</h3>
             <p>I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
         </div>
-        <div class="order-md-0 me-5 d-flex align-items-center">
-            <ul class="list-group">
+        <div class="order-1 order-md-0 me-5 d-flex align-items-center">
+            <ul class="list-group d-flex d-md-block flex-row gap-2">
                 <li class="list-unstyled mb-1"><i class="fab fa-github fa-lg"></i></li>
                 <li class="list-unstyled mb-1"><i class="fab fa-linkedin-in fa-lg"></i></li>
                 <li class="list-unstyled mb-1"><i class="fab fa-angellist fa-lg"></i></li>
@@ -57,9 +57,10 @@
         </div>
     </section>
     <section id="Portfolio">
-        <h2>My Recent Works</h2>
+        <h2 class="d-flex px-5 py-5">My Recent Works</h2>
+        </div>
         <div class="container">
-            <div class="row">
+            <div class="row row-cols-1 row-cols-md-3">
                 <div class="col-8">
                     <img src="/images/multi_post_project_image_desktop.png" class="img-fluid" alt="">
                 </div>
@@ -74,8 +75,8 @@
                 </div> 
             </div>           
         </div>
-        <div class="container">
-            <div class="row gap-3 mt-4">
+        <div class="container my-4">
+            <div class="row row-cols-1 row-cols-md-3 gap-3 px-md-0 px-2 mt-4 flex-md-nowrap">
                 <div class="col card bg-dark text-white p-0">
                     <img src="./images/Img-Placeholder.png" class="card-img" alt="...">
                     <div class="card-img-overlay d-flex justify-content-center flex-column">
@@ -118,7 +119,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row gap-3 my-4">
+            <div class="row row-cols-1 row-cols-md-3 gap-3 px-md-0 px-2 mt-4 flex-md-nowrap">
                 <div class="col card bg-dark text-white p-0">
                     <img src="./images/Img-Placeholder.png" class="card-img" alt="...">
                     <div class="card-img-overlay d-flex justify-content-center flex-column">
@@ -170,16 +171,16 @@
             <button type="submit" class="mt-3 btn btn-warning">Get my Resume</button>
         </div>
         <hr>
-        <div class="text-center py-5">
-            <ul class="list-group d-flex flex-row justify-content-between text-warning" id="skills-set">
-                <li class="list-unstyled fs-2">Language<ul class="p-0 text-start">
+        <div class="text-center text-md-start py-5">
+            <ul class="list-group d-flex flex-column flex-md-row justify-content-between text-warning gap-3 gap-md-0" id="skills-set">
+                <li class="list-unstyled fs-2">Language<ul class="p-0 text-center text-md-start">
                         <li class="list-unstyled fs-6 text-white">Javascript</li>
                         <li class="list-unstyled fs-6 text-white">Ruby</li>
                         <li class="list-unstyled fs-6 text-white">Html</li>
                         <li class="list-unstyled fs-6 text-white">Css</li>
                     </ul>
                 </li>
-                <li class="list-unstyled fs-2 text-start">Skills<ul class="p-0 text-start">
+                <li class="list-unstyled fs-2 text-md-start text-center ">Skills<ul class="p-0 text-center text-md-start">
                         <li class="list-unstyled fs-6 text-white">Bootstrap</li>
                         <li class="list-unstyled fs-6 text-white">Ruby on Rails</li>
                         <li class="list-unstyled fs-6 text-white">RSPec</li>
@@ -187,7 +188,7 @@
                         <li class="list-unstyled fs-6 text-white">Selenium</li>
                     </ul>
                 </li>
-                <li class="list-unstyled fs-2">Frameworks<ul class="p-0 text-start">
+                <li class="list-unstyled fs-2">Frameworks<ul class="p-0 text-center text-md-start">
                     <li class="list-unstyled fs-6 text-white">Codekit</li>
                     <li class="list-unstyled fs-6 text-white">Github</li>
                     <li class="list-unstyled fs-6 text-white">Codepen</li>
@@ -198,8 +199,8 @@
             </ul>
         </div>
     </section>
-    <section id="Contacts" class="container p-5 m-5">
-        <div class="row">
+    <section id="Contacts" class="container p-3 my-4 p-md-5 m-md-5">
+        <div class="row row-cols-1 row-cols-md-2 gap-2 gap-md-0">
             <div class="col d-flex align-items-center">
                 <h2 class="">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
             </div>
